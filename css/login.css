@@ -1,0 +1,213 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #eafff5;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    padding-top: 90px;
+}
+
+.custom-nav {
+    background-color: #eafff5;
+    padding: 8px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #1b6e4b;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #024628;
+}
+
+.form-label {
+    text-align: right;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1b6e4b;
+}
+
+.tiny-text a {
+    color: #1b6e4b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tiny-text a:hover {
+    color: #024628;
+    text-decoration: underline;
+}
+
+.text-end a {
+    color: #1b6e4b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.text-end a:hover {
+    color: #024628;
+    text-decoration: underline;
+}
+
+
+.login-wrapper {
+    min-height: calc(100vh - 140px);
+}
+
+.login-card {
+    background: #d8fff0;
+    border: 2px solid #7edbb2;
+    border-radius: 18px;
+    padding: 30px 22px;
+    width: 100%;
+    max-width: 360px;
+}
+
+.google-btn {
+    width: 100%;
+    border: none;
+    background: #eafff5;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.google-btn img {
+    width: 20px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin: 14px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #bbb;
+}
+
+.divider::before {
+    margin-left: 10px;
+}
+
+.divider::after {
+    margin-right: 10px;
+}
+
+.custom-input {
+    border-radius: 12px;
+    border: 2px solid #7edbb2;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.main-btn {
+    width: 100%;
+    background: #baf5db;
+    border: 2px solid #7edbb2;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.secondary-btn {
+    width: 100%;
+    background: #d8fff0;
+    border: 2px solid #7edbb2;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.tiny-text {
+    font-size: 11px;
+    color: #555;
+}
+
+.footer-section {
+    background-color: #c9f7df;
+    color: #1b6e4b;
+    padding: 40px 0 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.footer-section h6 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-section p {
+    line-height: 1.8;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #1b6e4b;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #024628;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #024628;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    background-color: #eafff5;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}

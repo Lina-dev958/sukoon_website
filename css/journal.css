@@ -1,0 +1,168 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #eafff5;
+    direction: rtl;
+    margin: 0;
+    padding-top: 75px;
+}
+
+.custom-nav {
+    background-color: #eafff5;
+    padding: 8px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #1b6e4b;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #024628;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.card {
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(2, 70, 40, 0.15);
+    margin: 40px auto;
+    max-width: 720px;
+    width: 100%;
+    padding: 35px;
+    background: #ffffff;
+}
+
+.card h3 {
+    font-weight: 800;
+    color: #024628;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #4f8f74;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* ================= TEXTAREA ================= */
+textarea.form-control {
+    resize: none;
+    font-size: 1rem;
+    border-radius: 16px;
+    padding: 15px;
+    border: 1px solid #c9f7df;
+    background-color: #f7fffb;
+}
+
+textarea.form-control:focus {
+    border-color: #6fd6aa;
+    box-shadow: 0 0 0 3px rgba(111, 214, 170, 0.3);
+}
+
+/* ================= BUTTONS ================= */
+button {
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 22px;
+    min-width: 150px;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ff6b6b, #e04f5f);
+    border: none;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #6fd6aa, #2d9c6c);
+    border: none;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #9aa5a1, #6c757d);
+    border: none;
+}
+
+/* ================= JOURNAL LIST ================= */
+.list-group-item {
+    border-radius: 14px;
+    margin-bottom: 10px;
+    border: none;
+    background: #f4fff9;
+    color: #024628;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-section {
+    background-color: #c9f7df;
+    color: #1b6e4b;
+    padding: 40px 0 20px;
+}
+
+.footer-section h6 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-section p {
+    line-height: 1.8;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #1b6e4b;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #024628;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #024628;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    background-color: #eafff5;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}
