@@ -152,7 +152,33 @@ body {
     min-height: 450px;
     text-align: center;
 }
+.card-test {
+    
+     background: #e6fcf3;
+}
 
+.card-journal {
+
+    background: #d9f5e8;
+}
+
+.card-mood {
+
+    background: #eafcf4;
+}
+
+.card-test,
+.card-journal,
+.card-mood {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-test:hover,
+.card-journal:hover,
+.card-mood:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(2, 70, 40, 0.18);
+}
 .service-card img {
     width: clamp(80px, 30%, 150px);
     height: auto;
@@ -413,4 +439,5 @@ section.py-5 p.text-muted {
     .service-card p {
         font-size: 0.9rem;
     }
+
 }
