@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SUKOON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link href="css/font.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light custom-nav fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="SUKOON Logo" class="logo-img">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#trip">رحلتك</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">مدونتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="therabiest.html">الأخصائيين</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-inner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="./img/هيرو1.jpg " class="d-block w-100 hero-img">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/هيرو2.jpg " class="d-block w-100 hero-img">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/هيرو3.jpg " class="d-block w-100 hero-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <h1 class="fw-bold mb-3">لمن مر بالكثير...<br>ولم يجد مكاناً يستريح فيه</h1>
+                        <p class="text-muted">
+                            نحن ندرك أن بعض التجارب تغيّر شكل القلب،وتترك أثراً لا يُرى.
+                            لهذا صُمّمت سكون لتكون مساحة رقيقة…
+                            خطوة صغيرة تساعدك على استعادة نفسك من جديد وبشكل آمن.
+                        </p>
+                        <div
+                            class="hero-buttons mt-4 justify-content-start justify-content-md-start justify-content-center gap-3">
+
+                            <button type="button" class="custom-btn" data-bs-toggle="modal"
+                                data-bs-target="#loginTypeModal">
+                                تسجيل دخول
+                            </button>
+
+                            <button type="button" class="custom-btn" data-bs-toggle="modal"
+                                data-bs-target="#registerTypeModal">
+                                إنشاء حساب
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <h1 class="fw-bold display-5 about-title">من<br>نحن؟</h1>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="about-box">
+                        <p class="about-text">
+                            في عالمٍ امتلأ بالضجيج والخسارة، وُلدت سكون لتكون مساحة للهدوء... لتكون رفيقًا هادئًا في
+                            رحلة التعافي.
+                            حيث نوفّر أدوات ذاتية بسيطة تساعد الأفراد على التفريغ النفسي، وفهم مشاعرهم واستعادة توازنهم
+                            خطوة بخطوة.
+                            نحن لا نقدّم حلولًا سريعة، بل نفتح بابًا للهدوء، ونمنحك مساحة لتكون كما أنت… لأن الشفاء يبدأ
+                            عندما يُسمح لنا أن نشعر.
+                            مكان يسمح لك بالتوقف، بالتنفس، وبالبدء من جديد على مهل، دون أن تُجبر على شرح ألمك أو كشف
+                            هويتك.
+                        </p>
+
+                        <ul class="custom-list">
+                            <li>
+                                <span class="circle-wrapper">
+                                    <span class="outer-circle"><span class="inner-circle"></span></span>
+                                    <span class="list-title">علاج قائم على الأدلة</span>
+                                </span>
+                                <p>استخدام أحدث الأبحاث والأساليب العلاجية المثبتة علمياً</p>
+                            </li>
+                            <li>
+                                <span class="circle-wrapper">
+                                    <span class="outer-circle"><span class="inner-circle"></span></span>
+                                    <span class="list-title">خطط رعاية شخصية</span>
+                                </span>
+                                <p>كل خطة علاجية مصممة خصيصاً لتلبية احتياجاتك وأهدافك الفريدة.</p>
+                            </li>
+                            <li>
+                                <span class="circle-wrapper">
+                                    <span class="outer-circle"><span class="inner-circle"></span></span>
+                                    <span class="list-title">آمن وسري</span>
+                                </span>
+                                <p>خصوصيتك وراحتك هما أولويتنا القصوى</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services-section" id="trip">
+        <div class="container">
+            <h3 class="text-center fw-bold mb-5">رحلتك الداخلية</h3>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card text-center card-test">
+                        <img src="./img/اختبار التقييم النفسي.png">
+                        <h5 class="fw-bold mt-3">اختبار التقييم النفسي</h5>
+                        <p>تعرّف على مشاعرك</p>
+                        <p>أجرِ اختبارًا بسيطًا يساعدك على فهم مشاعرك
+                            وحالتك النفسية الحالية، ويمنحك نظرة أوضح عن
+                            احتياجاتك العاطفية بطريقة سهلة وسريعة.</p>
+                        <a href="test.html" class="custom-btn">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card text-center card-journal">
+                        <img src="./img/كتابة اليوميات.png">
+                        <h5 class="fw-bold mt-3">اكتب ما بداخلك</h5>
+                        <p> كتابة يوميات</p>
+                        <p>مساحة شخصية وآمنة تساعدك على كتابة ما يدور في بالك
+                            من أفكار ومشاعر يومية، لتفريغ التوتر، وتنظيم أفكارك،
+                            وفهم نفسك بشكل أعمق مع مرور الوقت.</p>
+                        <a href="journal.html" class="custom-btn">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card text-center card-mood">
+                        <img src="./img/تتبع المزاج.png">
+                        <h5 class="fw-bold mt-3">كيف تشعر الآن؟</h5>
+                        <p>تتبع حالتك المزاجية </p>
+                        <p>حدّد شعورك الحالي وسجّل مزاجك اليومي بسهولة،
+                            لتتابع تغير حالتك النفسية مع الوقت
+                            وتفهم أكثر ما يؤثر على مشاعرك.</p>
+                        <a href="mood.html" class="custom-btn">ابدأ الآن</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 services-bg text-center" id="services">
+        <div class="container">
+
+            <h3 class="fw-bold mb-4 text-center">خدماتنا</h3>
+
+            <div id="servicesSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center g-4">
+
+                            <div class="col-md-5">
+                                <div class="service-main-card text-center">
+                                    <img src="./img/علاج أسري.jpg" class="img-fluid mb-4" width="200">
+                                    <button class="custom-btn">العلاج الأسري</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="service-main-card text-center">
+                                    <img src="./img/علاج معرفي سلوكي.jpg" class="img-fluid mb-4" width="200">
+                                    <button class="custom-btn">العلاج المعرفي السلوكي</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4">
+
+                            <div class="col-md-5">
+                                <div class="service-main-card text-center">
+                                    <img src="./img/علاج بالرسم.jpg" class="img-fluid mb-4" width="200">
+                                    <button class="custom-btn">العلاج بالفن</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="service-main-card text-center">
+                                    <img src="./img/علاج زوجي.jpg" class="img-fluid mb-4" width="200">
+                                    <button class="custom-btn">علاج زواجي</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4">
+
+                            <div class="col-md-5">
+                                <div class="service-main-card text-center">
+                                    <img src="./img/العلاج باللعب.jpg" class="img-fluid mb-4" width="200">
+                                    <button class="custom-btn">العلاج باللعب</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="service-main-card text-center">
+                                    <img src="./img/جلسات فردية.png" class="img-fluid mb-4" width="200">
+                                    <button class="custom-btn">جلسات فردية</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#servicesSlider"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#servicesSlider"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+
+            <br> <br><br>
+
+            <section class="py-5">
+                <div class="container">
+
+                    <div class="text-center mb-5">
+                        <h3 class="fw-bold">أحدث المقالات</h3>
+                        <p class="text-muted">
+                            مقالات مختارة لدعم صحتك النفسية
+                        </p>
+                    </div>
+
+                    <div class="row justify-content-center">
+
+                        <!-- مقال 1 -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img src="img/مقالة1.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">
+                                        إدارة التوتر النفسي
+                                    </h6>
+                                    <p class="small text-muted">
+                                        استراتيجيات عملية لتحقيق التوازن النفسي
+                                    </p>
+                                    <a href="articles/article1.html" class="custom-btn">
+                                        اقرأ المزيد
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- مقال 2 -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img src="img/مقالة2.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">
+                                        التغلب على القلق
+                                    </h6>
+                                    <p class="small text-muted">
+                                        أساليب فعّالة للسيطرة على القلق
+                                    </p>
+                                    <a href="articles/article2.html" class="custom-btn">
+                                        اقرأ المزيد
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- مقال 3 -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img src="img/مقالة3.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">
+                                        الإرشاد النفسي في الأزمات
+                                    </h6>
+                                    <p class="small text-muted">
+                                        كيف نواجه الأزمات بمرونة نفسية
+                                    </p>
+                                    <a href="articles/article3.html" class="custom-btn">
+                                        اقرأ المزيد
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- مقال 4 -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img src="img/مقالة4.png" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h6 class="fw-bold">
+                                        الإرشاد الفردي والزوجي
+                                    </h6>
+                                    <p class="small text-muted">
+                                        بناء علاقات صحية ومتوازنة
+                                    </p>
+                                    <a href="articles/article4.html" class="custom-btn">
+                                        اقرأ المزيد
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- زر كل المقالات -->
+                    <div class="text-center mt-4">
+                        <a href="article.html" class="btn btn-success px-4">
+                            عرض جميع المقالات
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </div>
+
+
+    </section>
+
+    <div class="modal fade" id="loginTypeModal" tabindex="-1" aria-labelledby="loginTypeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-end">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginTypeModalLabel">تسجيل الدخول</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>اختر تسجيل الدخول بصفته:</p>
+                    <div class="d-flex flex-column gap-3">
+                        <a href="patient-login.html" class="btn btn-outline-success">تسجيل دخول كمريض</a>
+                        <a href="therapist-login.html" class="btn btn-outline-success">تسجيل دخول كمعالج</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registerTypeModal" tabindex="-1" aria-labelledby="registerTypeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-end">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerTypeModalLabel">الانضمام</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>اختر الانضمام بصفته:</p>
+                    <div class="d-flex flex-column gap-3">
+                        <a href="patient-register.html" class="btn btn-outline-success">انضمام كمريض</a>
+                        <a href="therapist-register.html" class="btn btn-outline-success">انضمام كمعالج</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer-section">
+        <div class="container py-5">
+            <div class="row text-center text-md-end g-4">
+
+
+                <div class="col-md-3">
+                    <h6 class="fw-bold">سكون</h6>
+                    <p class="small footer-desc">
+                        منصة رقمية لدعم الصحة النفسية
+                        ومساعدتك على تحقيق التوازن
+                        والراحة النفسية.
+                    </p>
+
+                    <div class="social-icons mt-3 justify-content-center justify-content-md-start">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold">روابط سريعة</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">التقييم النفسي</a></li>
+                        <li><a href="#">تتبع المزاج</a></li>
+                        <li><a href="#">اليوميات</a></li>
+                        <li><a href="#">مدونة سكون</a></li>
+                    </ul>
+                </div>
+
+                <!-- الأخصائيين -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold">الأخصائيين</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">الأخصائي النفسي</a></li>
+                        <li><a href="#">الأخصائي الاجتماعي</a></li>
+                        <li><a href="#">الاستشارات</a></li>
+                        <li><a href="#">حجز جلسة</a></li>
+                    </ul>
+                </div>
+
+                <!-- الدعم -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold">الدعم</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">تواصل معنا</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center py-2">
+            © 2026 سكون – جميع الحقوق محفوظة
+        </div>
+    </footer>
+
+    <script>
+        const articles = [
+            { img: "img/مقالة1.png", title: "إدارة التوتر النفسي وأثرها على جودة الحياة", desc: "مقال يوضح أسباب التوتر النفسي وتأثيره على الصحة، ويعرض استراتيجيات عملية مثل التأمل والتنظيم ونمط الحياة الصحي لتحقيق التوازن والراحة النفسية.", author: "د. إيمان أبو الخير ", link: "article1.html" },
+            { img: "img/مقالة2.png", title: "التغلب على القلق وتحسين التوازن النفسي", desc: "مفهوم القلق وأسبابه، ويقدم أساليب عملية مثل الرياضة، الاسترخاء، التفكير الإيجابي والدعم الاجتماعي للسيطرة عليه وتحقيق راحة نفسية أفضل.", author: "د. بلسم الجديلي ", link: "article2.html" },
+            { img: "img/مقالة3.png", title: "الإرشاد النفسي في مواجهة الأزمات", desc: "دور الإرشاد النفسي في التعامل مع الأزمات، ويعرض استراتيجيات عملية لتعزيز المرونة النفسية، تقليل التوتر، وتحويل الأزمات إلى فرص للنمو والتكيف.", author: "د. أحمد عاشور", link: "article3.html" },
+            { img: "img/مقالة4.png", title: "الإرشاد الفردي والزوجي لتعزيز العلاقات الصحية", desc: "أهمية الإرشاد الفردي والزوجي في تحسين التواصل، حل النزاعات، تعزيز الثقة، ودعم الصحة النفسية لبناء علاقات أسرية متوازنة ومستقرة.", author: "د. دلال ساق الله -", link: "article4.html" },
+            { img: "img/مقالة5.png", title: "العلاج بالفن ودوره في تعزيز الصحة النفسية", desc: "كيف تساعد الأنشطة العلاجية بالفن على التعبير عن المشاعر، تقليل التوتر والقلق، وتنمية الإبداع والمرونة النفسية بأساليب آمنة وفعّالة.", author: "د. فاطمة أبو عودة ", link: "article5.html" },
+            { img: "img/مقالة6.png", title: "الإرشاد النفسي للمراهقين ودوره في الدعم والتوازن", desc: "أهمية الإرشاد النفسي للمراهقين في فهم المشاعر، تعزيز الثقة بالنفس، تحسين التواصل، والوقاية من القلق والاكتئاب لبناء شخصية متوازنة.", author: "د. ريم بخيت", link: "article6.html" },
+            { img: "img/مقالة7.png", title: "الاكتئاب: الفهم والعلاج والدعم النفسي", desc: "مقال يشرح الاكتئاب وأعراضه، ويستعرض خيارات العلاج النفسي والدوائي، ودور الدعم الاجتماعي ونمط الحياة الصحي في تحسين المزاج والوقاية من الانتكاس وتعزيز الاستقرار النفسي.", author: "د. عطاف السويسي", link: "article7.html" },
+            { img: "img/مقالة8.png", title: "بناء الثقة بالنفس وتحقيق التوازن الشخصي", desc: "طرق تطوير الثقة بالنفس عبر التفكير الإيجابي، مواجهة المخاوف، نمط حياة صحي، والدعم الاجتماعي لتحقيق النجاح والرضا الشخصي وجودة حياة أفضل.", author: "د. سهى سكيك ", link: "article8.html" },
+            { img: "img/مقالة9.png", title: "التغلب على القلق الاجتماعي وبناء التواصل الفعّال", desc: "مقال يوضح القلق الاجتماعي وأسبابه، ويعرض دور الإرشاد النفسي في تنمية مهارات التواصل، تقليل الخوف، وتعزيز الثقة بالنفس لتحقيق تفاعل اجتماعي صحي.", author: "د. خالد أبو جراد", link: "article9.html" },
+            { img: "img/مقالة10.png", title: "إدارة الغضب: استراتيجيات التحكم والتوازن النفسي", desc: "مقال يوضح طرق التعرف على الغضب ومسبباته، ويقدم تقنيات الاسترخاء، التواصل الفعّال، والدعم النفسي للتحكم بالمشاعر وتحقيق توازن صحي في الحياة.", author: "د. إيمان أبو الخير", link: "article10.html" },
+            { img: "img/مقالة11.png", title: "إدارة الضغوط اليومية لتحقيق التوازن النفسي", desc: "مقال يوضح أساليب إدارة الضغوط اليومية عبر التنظيم، الاسترخاء، الرياضة، النوم الصحي، والدعم النفسي لتحقيق توازن نفسي وجسدي وتعزيز القدرة على مواجهة التحديات.", author: "د. عطاف  السويسي", link: "article11.html" },
+            { img: "img/مقالة12.png", title: "الإرشاد الفردي والزوجي لتعزيز العلاقات الصحية", desc: "مقال يشرح دور الإرشاد الفردي والزوجي في تحسين التواصل، حل الصراعات، زيادة الوعي الذاتي، وبناء علاقات مستقرة تعزز الرضا الشخصي والجودة الحياتية.", author: "د. نسمة الغندور", link: "article12.html" },
+            { img: "img/مقالة13.png", title: "العلاج بالفن: وسيلة مبتكرة لدعم الصحة النفسية", desc: "مقال يوضح كيف تساعد الأنشطة العلاجية بالفن مثل الرسم والموسيقى على التعبير عن المشاعر، تخفيف التوتر، تعزيز الإبداع، وبناء الثقة والتوازن النفسي.", author: "د. مرام أبو عودة", link: "article13.html" },
+            { img: "img/مقالة14.png", title: "الإرشاد النفسي للمراهقين: دعم النمو والتوازن النفسي", desc: "مقال يوضح أهمية الإرشاد النفسي للمراهقين في التعامل مع القلق، التحديات الأكاديمية والاجتماعية، تعزيز الثقة بالنفس، وتوفير بيئة آمنة للنمو النفسي المتوازن.", author: "د. ياسمين قداس", link: "article14.html" },
+            { img: "img/مقالة15.png", title: "التعامل مع الاكتئاب الخفيف: استراتيجيات داعمة وفعّالة", desc: "مقال يوضح طرق التعامل مع الاكتئاب الخفيف عبر ممارسة الرياضة، تنظيم النوم، الهوايات، الدعم النفسي، التفكير الإيجابي، والاسترخاء لتعزيز المزاج والراحة النفسية اليومية.", author: "د. هديل شيخ العيد", link: "article15.html" },
+            { img: "img/مقالة16.png", title: "تعزيز الثقة بالنفس لتحقيق النجاح الشخصي", desc: "مقال يوضح طرق بناء الثقة بالنفس عبر التعرف على القدرات، مواجهة المخاوف، الدعم الاجتماعي، والإرشاد النفسي لتعزيز الشعور بالقيمة وتحسين جودة الحياة.", author: "د. خالد أبو جراد", link: "article16.html" },
+            { img: "img/مقالة17.png", title: "القلق الاجتماعي: استراتيجيات التغلب وبناء التفاعل الصحي", desc: "مقال يوضح كيفية التعامل مع القلق الاجتماعي عبر التعرض التدريجي، تقنيات الاسترخاء، الإرشاد النفسي، وبناء مهارات التواصل والثقة بالنفس لتحقيق علاقات متوازنة.", author: "د. فداء الدرة", link: "article17.html" },
+            { img: "img/مقالة18.png", title: "الإرشاد النفسي للأطفال: دعم النمو والتكيف الصحي", desc: "مقال يوضح دور الإرشاد النفسي للأطفال في التعبير عن المشاعر، تعزيز الثقة بالنفس، تحسين التواصل، وتخفيف التوتر لتحقيق نمو نفسي وسلوك إيجابي متوازن.", author: "د. نعمة شاهين", link: "article18.html" },
+            { img: "img/مقالة19.png", title: "إدارة التوتر في بيئة العمل لتعزيز الإنتاجية", desc: "مقال يوضح أساليب التعامل مع التوتر في العمل عبر تحديد الأولويات، التواصل المفتوح، تقنيات الاسترخاء، نمط حياة صحي، والدعم الاجتماعي لتحسين الصحة والإنتاجية.", author: "د. يوسف بركات", link: "article19.html" },
+            { img: "img/مقالة20.png", title: "التوازن النفسي والاجتماعي لتحقيق حياة صحية", desc: "مقال يوضح أهمية التوازن النفسي والاجتماعي من خلال إدارة المشاعر، بناء العلاقات الصحية، ممارسة الهوايات، والدعم الاجتماعي لتعزيز الرضا الشخصي وجودة الحياة.", author: "د. دلال ساق الله", link: "article20.html" }
+        ];
+
+        const articlesPerPage = 2;
+        let currentPage = 1;
+        const totalPages = Math.ceil(articles.length / articlesPerPage);
+
+        function displayArticles(page) {
+            if (event) event.preventDefault();
+            const start = (page - 1) * articlesPerPage;
+            const end = start + articlesPerPage;
+            const container = document.getElementById("blog-container");
+            container.innerHTML = "";
+
+            articles.slice(start, end).forEach(a => {
+                container.innerHTML += `
+<div class="col-lg-4 col-md-6 col-sm-10 mb-4 d-flex justify-content-center">
+
+    <div class="blog-card p-3 border rounded w-100">
+        <img src="${a.img}" class="img-fluid mb-2" alt="${a.title}">
+        <div class="blog-card-body">
+            <h5 class="blog-title mt-3">${a.title}</h5>
+            <p class="blog-desc">${a.desc}</p>
+            <p class="blog-author">${a.author}</p>
+        </div>
+        <a href="${a.link}" class="btn btn-success btn-sm">اقرأ المزيد</a>
+    </div>
+</div>`;
+            });
+
+            // Pagination
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+
+            // Previous
+            if (page > 1) {
+                pagination.innerHTML += `<li class="page-item"><a class="page-link" href="#" onclick="displayArticles(${page - 1})">السابق</a></li>`;
+            } else {
+                pagination.innerHTML += `<li class="page-item disabled"><a class="page-link">السابق</a></li>`;
+            }
+
+            // أرقام الصفحات
+            for (let i = 1; i <= totalPages; i++) {
+                pagination.innerHTML += `<li class="page-item ${i === page ? 'active' : ''}">
+            <a class="page-link" href="#" onclick="displayArticles(${i})">${i}</a>
+        </li>`;
+            }
+
+            // Next
+            if (page < totalPages) {
+                pagination.innerHTML += `<li class="page-item"><a class="page-link" href="#" onclick="displayArticles(${page + 1})">التالي</a></li>`;
+            } else {
+                pagination.innerHTML += `<li class="page-item disabled"><a class="page-link">التالي</a></li>`;
+            }
+        }
+
+        // عرض الصفحة الأولى عند التحميل
+        displayArticles(currentPage);
+    </script>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
