@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>حجز الجلسة</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/font.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/booking.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+        <div class="container-fluid px-3">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/logo.png" alt="SUKOON Logo" class="logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-links">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#services">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#articles">مقالاتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../therabiest.html">الأخصائيين</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#success">آراء العملاء</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../#footer">تواصل معنا</a></li>
+                </ul>
+
+                <a href="#" class="btn-consult">احجز استشارة مجانية</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="booking-page py-5">
+
+        <div class="booking-header text-center mb-5">
+            <p class="small text-muted">
+                <a href="../therabiest.html" class="text-muted text-decoration-none">
+                    قائمة المعالجين
+                </a>
+                /
+                <a href="../therapist/yasmeen.html" class="text-muted text-decoration-none">
+                    د. ياسمين قداس
+                </a>
+                /
+                <span class="text-black fw-bold">
+                    حجز الجلسة
+                </span>
+            </p>
+
+            <p class="text-black fw-bold">احجز موعدك واحصل على مساعدتك</p>
+        </div>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-5">
+
+                    <div class="info-box mb-3 d-flex align-items-center gap-3">
+                        <img src="../img/ياسمين قداس.png" class="therapist-img">
+                        <div>
+                            <h6 class="fw-bold mb-1">أ.د/ ياسمين قداس </h6>
+                            <small class="text-muted">الدعم النفسي في الأزمات</small>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <div class="info-box mb-3">
+                        <h6 class="fw-bold mb-3">مدة الجلسة</h6>
+                        <div class="d-flex gap-2">
+                            <button class="duration-btn active">30 دقيقة</button>
+                            <button class="duration-btn">60 دقيقة</button>
+                        </div>
+                    </div>
+
+                    <div class="info-box mb-4">
+                        <h6 class="fw-bold mb-2">الفترة والتكلفة</h6>
+                        <p class="mb-1">مدة الجلسة: <strong>30 دقيقة</strong></p>
+                        <p class="mb-0">السعر: <strong>40 دولار</strong></p>
+                    </div>
+
+                    <button class="btn btn-success w-100">
+                        <a href="../payment.html">
+                            احجز الآن
+                        </a>
+                    </button>
+
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="calendar-box">
+                        <h6 class="fw-bold mb-3">اختر الموعد</h6>
+
+                        <div id="calendar"></div>
+                        <div id="bookingBox">
+                            <h4 id="selectedDateText"></h4>
+                            <p>اختر وقت الجلسة:</p>
+
+                            <button class="time-btn" onclick="bookSession('10:00')">10:00</button>
+                            <button class="time-btn" onclick="bookSession('11:00')">11:00</button>
+                            <button class="time-btn" onclick="bookSession('12:00')">12:00</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container footer-content">
+
+            <div class="footer-about">
+                <h3 class="logo">سكون</h3>
+                <p>
+                    منصة رقمية متخصصة في الدعم النفسي والعلاج النفسي
+                    لمساعدتك على تحقيق التوازن والراحة النفسية
+                </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">خدماتنا</a></li>
+                    <li><a href="#">أعمالنا</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>الخدمات</h4>
+                <ul>
+                    <li><a href="#">التقييم النفسي</a></li>
+                    <li><a href="#">تتبع المزاج</a></li>
+                    <li><a href="#">كتابة اليوميات</a></li>
+                    <li><a href="#">حجز جلسة</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>الدعم</h4>
+                <ul>
+                    <li><a href="#">تواصل معنا</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            سكون © 2026 - جميع الحقوق محفوظة
+        </div>
+    </footer>
+
+    <script>
+        let calendar;
+        let selectedDate = null;
+
+        let bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const calendarEl = document.getElementById('calendar');
+
+            calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                locale: 'ar',
+                events: bookings,
+
+                dateClick: function (info) {
+
+                    const isBooked = bookings.some(b => b.start === info.dateStr);
+
+                    if (isBooked) {
+                        alert('هذا التاريخ محجوز بالفعل');
+                        return;
+                    }
+
+                    selectedDate = info.dateStr;
+
+                    document.getElementById('selectedDateText').innerText =
+                        '📅 حجز جلسة بتاريخ: ' + selectedDate;
+
+                    document.getElementById('bookingBox').style.display = 'block';
+                },
+
+                eventClick: function (info) {
+
+                    const confirmCancel = confirm('هل تريد إلغاء هذا الحجز؟');
+
+                    if (!confirmCancel) return;
+
+                    info.event.remove();
+
+                    bookings = bookings.filter(b =>
+                        !(b.start === info.event.startStr && b.title === info.event.title)
+                    );
+
+                    localStorage.setItem('bookings', JSON.stringify(bookings));
+
+                    alert('تم إلغاء الحجز بنجاح');
+                }
+            });
+
+            calendar.render();
+        });
+
+        function bookSession(time) {
+
+            if (!selectedDate) return;
+
+            const booking = {
+                title: 'محجوز' + time,
+                start: selectedDate,
+                allDay: true,
+                backgroundColor: '#ff9f89'
+            };
+
+            bookings.push(booking);
+            localStorage.setItem('bookings', JSON.stringify(bookings));
+
+            calendar.addEvent(booking);
+
+            document.getElementById('bookingBox').style.display = 'none';
+            selectedDate = null;
+
+            alert('تم حجز الجلسة بنجاح');
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
