@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>مقالات سكون</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Font -->
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+      <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+        <div class="container-fluid px-3">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.png" alt="SUKOON Logo" class="logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-links">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#articles">مقالاتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="therabiest.html">الأخصائيين</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#success">آراء العملاء</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">تواصل معنا</a></li>
+                </ul>
+
+                <a href="#" class="btn-consult">احجز استشارة مجانية</a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container py-5" id="blog">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">مدونة سكون</h2>
+            <p class="text-muted">
+                جميع المقالات مكتوبة بقلم الأخصائيين المعتمدين من أقسام مختلفة
+            </p>
+        </div>
+
+        <!-- Articles -->
+        <div class="row justify-content-center" id="blog-container"></div>
+
+        <!-- Pagination -->
+        <nav class="mt-5">
+            <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="container footer-content">
+
+            <div class="footer-about">
+                <h3 class="logo">سكون</h3>
+                <p>
+                    منصة رقمية متخصصة في الدعم النفسي والعلاج النفسي
+                    لمساعدتك على تحقيق التوازن والراحة النفسية
+                </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">خدماتنا</a></li>
+                    <li><a href="#">أعمالنا</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>الخدمات</h4>
+                <ul>
+                    <li><a href="#">التقييم النفسي</a></li>
+                    <li><a href="#">تتبع المزاج</a></li>
+                    <li><a href="#">كتابة اليوميات</a></li>
+                    <li><a href="#">حجز جلسة</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>الدعم</h4>
+                <ul>
+                    <li><a href="#">تواصل معنا</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            سكون © 2026 - جميع الحقوق محفوظة
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const articles = [
+            {
+                img: "img/مقالة1.png",
+                title: "إدارة التوتر النفسي وأثرها على جودة الحياة",
+                desc: "أسباب التوتر النفسي وتأثيره على الصحة مع استراتيجيات عملية لتحقيق التوازن.",
+                author: "د. إيمان أبو الخير",
+                link: "./articles/article1.html",
+                class: "article-image img-fluid"
+            },
+            {
+                img: "img/مقالة2.png",
+                title: "التغلب على القلق وتحسين التوازن النفسي",
+                desc: "أساليب عملية مثل الرياضة، الاسترخاء، التفكير الإيجابي والدعم الاجتماعي.",
+                author: "د. بلسم الجديلي",
+                link: "./articles/article2.html"
+            },
+            {
+                img: "img/مقالة3.png",
+                title: "الإرشاد النفسي في مواجهة الأزمات",
+                desc: "تعزيز المرونة النفسية وتقليل التوتر وتحويل الأزمات إلى فرص للنمو.",
+                author: "د. أحمد عاشور",
+                link: "./articles/article3.html"
+            },
+            {
+                img: "img/مقالة4.png",
+                title: "الإرشاد الفردي والزوجي لتعزيز العلاقات الصحية",
+                desc: "تحسين التواصل وحل النزاعات وبناء علاقات مستقرة.",
+                author: "د. دلال ساق الله",
+                link: "./articles/article4.html"
+            },
+            {
+                img: "img/مقالة5.png",
+                title: "العلاج بالفن ودوره في تعزيز الصحة النفسية",
+                desc: "التعبير عن المشاعر وتقليل التوتر وتنمية الإبداع.",
+                author: "د. فاطمة أبو عودة",
+                link: "./articles/article5.html"
+            },
+            {
+                img: "img/مقالة6.png",
+                title: "الإرشاد النفسي للمراهقين ودوره في الدعم",
+                desc: "تعزيز الثقة بالنفس وتحسين التواصل والوقاية من القلق.",
+                author: "د. ريم بخيت",
+                link: "./articles/article6.html"
+            },
+            {
+                img: "img/مقالة7.png",
+                title: "الاكتئاب: الفهم والعلاج والدعم النفسي",
+                desc: "مقال يشرح الاكتئاب وأعراضه، ويستعرض خيارات العلاج النفسي والدوائي، ودور الدعم الاجتماعي ونمط الحياة الصحي في تحسين المزاج والوقاية من الانتكاس وتعزيز الاستقرار النفسي.",
+                author: "د. عطاف السويسي",
+                link: "./articles/article7.html"
+            },
+            {
+                img: "img/مقالة8.png",
+                title: "بناء الثقة بالنفس وتحقيق التوازن الشخصي",
+                desc: "طرق تطوير الثقة بالنفس عبر التفكير الإيجابي، مواجهة المخاوف، نمط حياة صحي، والدعم الاجتماعي لتحقيق النجاح والرضا الشخصي وجودة حياة أفضل.",
+                author: "د. سهى سكيك ",
+                link: "./articles/article8.html"
+            },
+            {
+                img: "img/مقالة9.png",
+                title: "التغلب على القلق الاجتماعي وبناء التواصل الفعّال",
+                desc: "مقال يوضح القلق الاجتماعي وأسبابه، ويعرض دور الإرشاد النفسي في تنمية مهارات التواصل، تقليل الخوف، وتعزيز الثقة بالنفس لتحقيق تفاعل اجتماعي صحي.",
+                author: "د. خالد أبو جراد",
+                link: "./articles/article9.html"
+            },
+            {
+                img: "img/مقالة10.png",
+                title: "إدارة الغضب: استراتيجيات التحكم والتوازن النفسي",
+                desc: "مقال يوضح طرق التعرف على الغضب ومسبباته، ويقدم تقنيات الاسترخاء، التواصل الفعّال، والدعم النفسي للتحكم بالمشاعر وتحقيق توازن صحي في الحياة.",
+                author: "د. إيمان أبو الخير",
+                link: "./articles/article10.html"
+            },
+            {
+                img: "img/مقالة11.png",
+                title: "إدارة الضغوط اليومية لتحقيق التوازن النفسي",
+                desc: "مقال يوضح أساليب إدارة الضغوط اليومية عبر التنظيم، الاسترخاء، الرياضة، النوم الصحي، والدعم النفسي لتحقيق توازن نفسي وجسدي وتعزيز القدرة على مواجهة التحديات.",
+                author: "د. عطاف  السويسي",
+                link: "./articles/article11.html"
+            },
+            {
+                img: "img/مقالة12.png",
+                title: "الإرشاد الفردي والزوجي لتعزيز العلاقات الصحية",
+                desc: "مقال يشرح دور الإرشاد الفردي والزوجي في تحسين التواصل، حل الصراعات، زيادة الوعي الذاتي، وبناء علاقات مستقرة تعزز الرضا الشخصي والجودة الحياتية.",
+                author: "د. نسمة الغندور",
+                link: "./articles/article12.html"
+            },
+            {
+                img: "img/مقالة13.png",
+                title: "العلاج بالفن: وسيلة مبتكرة لدعم الصحة النفسية",
+                desc: "مقال يوضح كيف تساعد الأنشطة العلاجية بالفن مثل الرسم والموسيقى على التعبير عن المشاعر، تخفيف التوتر، تعزيز الإبداع، وبناء الثقة والتوازن النفسي.",
+                author: "د. مرام أبو عودة",
+                link: "./articles/article13.html"
+            },
+            {
+                img: "img/مقالة14.png",
+                title: "الإرشاد النفسي للمراهقين: دعم النمو والتوازن النفسي",
+                desc: "مقال يوضح أهمية الإرشاد النفسي للمراهقين في التعامل مع القلق، التحديات الأكاديمية والاجتماعية، تعزيز الثقة بالنفس، وتوفير بيئة آمنة للنمو النفسي المتوازن.",
+                author: "د. ياسمين قداس",
+                link: "./articles/article14.html"
+            },
+
+            {
+                img: "img/مقالة15.png",
+                title: "التعامل مع الاكتئاب الخفيف: استراتيجيات داعمة وفعّالة",
+                desc: "مقال يوضح طرق التعامل مع الاكتئاب الخفيف عبر ممارسة الرياضة، تنظيم النوم، الهوايات، الدعم النفسي، التفكير الإيجابي، والاسترخاء لتعزيز المزاج والراحة النفسية اليومية.",
+                author: "د. هديل شيخ العيد",
+                link: "./articles/article15.html"
+            },
+            {
+                img: "img/مقالة16.png",
+                title: "تعزيز الثقة بالنفس لتحقيق النجاح الشخصي",
+                desc: "مقال يوضح طرق بناء الثقة بالنفس عبر التعرف على القدرات، مواجهة المخاوف، الدعم الاجتماعي، والإرشاد النفسي لتعزيز الشعور بالقيمة وتحسين جودة الحياة.",
+                author: "د. خالد أبو جراد",
+                link: "./articles/article16.html"
+            },
+            {
+                img: "img/مقالة17.png",
+                title: "القلق الاجتماعي: استراتيجيات التغلب وبناء التفاعل الصحي",
+                desc: "مقال يوضح كيفية التعامل مع القلق الاجتماعي عبر التعرض التدريجي، تقنيات الاسترخاء، الإرشاد النفسي، وبناء مهارات التواصل والثقة بالنفس لتحقيق علاقات متوازنة.",
+                author: "د. فداء الدرة",
+                link: "./articles/article17.html"
+            },
+            {
+                img: "img/مقالة18.png",
+                title: "الإرشاد النفسي للأطفال: دعم النمو والتكيف الصحي",
+                desc: "مقال يوضح دور الإرشاد النفسي للأطفال في التعبير عن المشاعر، تعزيز الثقة بالنفس، تحسين التواصل، وتخفيف التوتر لتحقيق نمو نفسي وسلوك إيجابي متوازن.",
+                author: "د. نعمة شاهين",
+                link: "./articles/article18.html"
+            },
+            {
+                img: "img/مقالة19.png",
+                title: "إدارة التوتر في بيئة العمل لتعزيز الإنتاجية",
+                desc: "مقال يوضح أساليب التعامل مع التوتر في العمل عبر تحديد الأولويات، التواصل المفتوح، تقنيات الاسترخاء، نمط حياة صحي، والدعم الاجتماعي لتحسين الصحة والإنتاجية.",
+                author: "د. يوسف بركات",
+                link: "./articles/article19.html"
+            },
+            {
+                img: "img/مقالة20.png",
+                title: "التوازن النفسي والاجتماعي لتحقيق حياة صحية",
+                desc: "مقال يوضح أهمية التوازن النفسي والاجتماعي من خلال إدارة المشاعر، بناء العلاقات الصحية، ممارسة الهوايات، والدعم الاجتماعي لتعزيز الرضا الشخصي وجودة الحياة.",
+                author: "د. دلال ساق الله",
+                link: "./articles/article20.html"
+            }
+
+        ];
+
+        const articlesPerPage = 6;
+        let currentPage = 1;
+        const totalPages = Math.ceil(articles.length / articlesPerPage);
+
+        function displayArticles(page) {
+            currentPage = page;
+
+            const start = (page - 1) * articlesPerPage;
+            const end = start + articlesPerPage;
+            const container = document.getElementById("blog-container");
+            container.innerHTML = "";
+
+            articles.slice(start, end).forEach(article => {
+                container.innerHTML += `
+        <div class="col-lg-4 col-md-6 col-sm-10 mb-4">
+            <div class="blog-card p-3 border rounded h-100">
+                <img src="${article.img}" class="img-fluid mb-3" alt="${article.title}">
+                <h5 class="blog-title">${article.title}</h5>
+                <p class="blog-desc">${article.desc}</p>
+                <p class="blog-author">${article.author}</p>
+                <a href="${article.link}" class="btn btn-read btn-sm">
+                    اقرأ المزيد
+                </a>
+            </div>
+        </div>`;
+            });
+
+            renderPagination();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        function renderPagination() {
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+
+            pagination.innerHTML += `
+        <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+            <a class="page-link" href="#" onclick="displayArticles(${currentPage - 1})">السابق</a>
+        </li>`;
+
+            for (let i = 1; i <= totalPages; i++) {
+                pagination.innerHTML += `
+        <li class="page-item ${i === currentPage ? 'active' : ''}">
+            <a class="page-link" href="#" onclick="displayArticles(${i})">${i}</a>
+        </li>`;
+            }
+
+            pagination.innerHTML += `
+        <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+            <a class="page-link" href="#" onclick="displayArticles(${currentPage + 1})">التالي</a>
+        </li>`;
+        }
+
+        // Initial load
+        displayArticles(1);
+    </script>
+
+</body>
+
+</html>
