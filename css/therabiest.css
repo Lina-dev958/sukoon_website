@@ -129,7 +129,15 @@ body {
     transform: translateY(-2px);
 }
 
-
+.carousel-control-prev,
+.carousel-control-next {
+    width: 45px;
+    height: 45px;
+    background: #14B8A6;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .page-section {
     display: none;
 }
@@ -321,4 +329,5 @@ body {
     .footer-about p {
         max-width: 100%;
     }
+
 }
